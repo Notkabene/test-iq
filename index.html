@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Тест на уровень IQ</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+  <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <button class="burger" id="burger">
+          <span class="burger__line"></span>
+        </button>
+        <img class="header__img" src="images/brain-logo.png" alt="мозг">
+        <p class="header__text">
+          тест на определение IQ
+        </p>
+        <div class="menu" id="menu">
+
+          <button class="menu__btn" type="button">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M28 2.82L25.18 0L14 11.18L2.82 0L0 2.82L11.18 14L0 25.18L2.82 28L14 16.82L25.18 28L28 25.18L16.82 14L28 2.82Z"
+                fill="#FFC700" />
+            </svg>
+          </button>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#" id="btnHome">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#about">Информация о тесте</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link start-test" href="#footer">пройти тест</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="main__wrapper">
+
+      <section class="banner">
+        <div class="container">
+          <div class="banner__wrapper">
+
+            <span class="banner__subtitle">Пройдите точный и быстрый </span>
+            <h1 class="banner__title yellow-text">Тест на определение IQ</h1>
+            <img class="banner__img" src="images/brain-logo.png" alt="мозг">
+            <button class="banner__btn btn start-test" type="button">пРойти тест</button>
+
+            <p class="banner__text">
+              <span class="yellow-text">И получите рекомендации по развитию своего интеллекта</span> и улучшению
+              финансового благосостояния и личной жизни
+            </p>
+            <a class="banner__link" href="#about">Подробнее</a>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="blockquote" id="about">
+        <h2 class="sr-only">
+          Цитата
+        </h2>
+        <div class="container">
+          <div class="blockquote__wrapper">
+            <blockquote class="blockquote__text">
+              Профессиональный IQ-тест позволяет не только определить коэффициент вашего интеллекта, но и выработать
+              список
+              рекомендаций для повышения этого показателя.
+            </blockquote>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="about">
+        <h2 class="sr-only">
+          Вы получите
+        </h2>
+        <div class="container">
+          <p class="about__text">
+            Также по результатам теста <b>вы получите</b> подробные <b>советы</b> по определению наиболее перспективной
+            <b>для вашего типа <span>интеллекта</span> сферы деятельности</b>, которая принесет вам скорейший финансовый
+            результат.
+          </p>
+          <img class="about__img" src="images/brain-about.png" alt="Разделение сфер в мозге">
+          <button class="about__btn btn  start-test" type="button">пРойти тест</button>
+        </div>
+      </section>
+    </div>
+
+
+  </main>
+
+  <footer class="footer" id="footer">
+    <h2 class="sr-only">
+      О прохождении теста
+    </h2>
+    <div class="container">
+      <div class="footer__info">
+        <p class="footer__text">
+          Прохождение теста займет у вас не более <b class="yellow-text">12 минут</b>, а его <b>результаты</b> вы
+          сможете
+          <b class="yellow-text">использовать
+            всю жизнь.</b>
+        </p>
+        <p class="footer__motivation">
+          Профессиональная интерпретация и детально <b>проработанные рекомендации</b> позволят вам качественно
+          <b>изменить все аспекты своей жизни:</b> от финансового до любовного.
+        </p>
+        <button class="footer__btn btn  start-test" type="button">пРойти тест</button>
+      </div>
+
+    </div>
+    <span class="footer__copy">2019</span>
+  </footer>
+
+
+
+
+  <script src="js/questions.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
