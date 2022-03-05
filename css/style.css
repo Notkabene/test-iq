@@ -27,6 +27,10 @@ body {
   height: 100%;
 }
 
+.main {
+  background-image: url(../images/bg.png);
+}
+
 .progressbar {
   max-width: 260px;
   width: 100%;
@@ -422,6 +426,7 @@ body {
 }
 
 .testing {
+  
   display: flex;
   flex-direction: column;
   height: calc(100vh - 47px);
