@@ -775,6 +775,16 @@ body {
 }
 
 
+.data {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: rgba(243, 243, 242, 0.8);
+  color: #0D0C11;
+  position: relative;
+  z-index: 999;
+  text-align: left;
+}
+
 
 @media (min-width: 768px) {
   html {

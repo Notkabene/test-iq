@@ -205,9 +205,57 @@ const createTestingPage = (index = 0, width) => {
 
       main.insertAdjacentElement('beforeend', declaration)
       runTimer()
+      test()
+
+
     }
-    setTimeout(endTest, 2000)
+    setTimeout(endTest, 0)
   }
+}
+
+const test = () => {
+  const endPageLink = document.querySelector('.end-page__link')
+  const endPage = document.querySelector('.end-page')
+
+  const test2 = (name, height, weight, eyes, color) => {
+    const createData = document.createElement('div')
+    createData.classList = 'data'
+    createData.innerHTML = `
+    <h3 class="data__title">Поздравляю Вы умны как: ${name}</h3>
+    <p>Можете сравнить его параметры с Вашими:</p>
+    <ul class="data__list">
+      <li class="data__item data__item--height">Рост: ${height}</li>
+      <li class="data__item data__item--weight">Вес: ${weight}</li>
+      <li class="data__item data__item--eyes">Глаза: ${eyes}</li>
+      <li class="data__item data__item--color">Цвет волос: ${color}</li>
+    </ul>`
+    endPage.append(createData)
+  }
+  
+  
+
+  endPageLink.addEventListener('click', (e) => {
+    e.preventDefault()
+    const URL_PEOPLE = 'https://swapi.dev/api/people/1'
+    const result = fetch(URL_PEOPLE)
+
+    result
+      .then(response => {
+        if(!response.ok) {
+          throw new Error('Ошибка в запросе')
+        }
+        return response.json()
+      })
+
+      .then(people => {
+        test2(people.name, people.height, people.mass, people.eye_color, people.hair_color)
+        endPage.style.height = '100%'
+      })
+
+      .catch(error => {
+        console.log(error);
+      })
+  })
 }
 
 const runTimer = () => {
@@ -271,4 +319,7 @@ const chekStatusTestingBtn = () => {
     }
   })
 }
+
+
+
 
